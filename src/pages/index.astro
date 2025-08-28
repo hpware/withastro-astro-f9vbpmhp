@@ -8,7 +8,8 @@ import "./styles.css"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="YHW Server Managing team."/>
   <meta name="author-email" content="labs.team@yuanhau.com" />
-  <meta name="generator" content="yhw_tw servers v2"/>
+	<meta name="generator" content={Astro.generator} />
+  <title>Aww snap!</title>
 </head>
   <style>
 </style>
@@ -20,11 +21,9 @@ import "./styles.css"
         <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-green-700 to-amber-800"></div>
         <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-blue-600 to-amber-800"></div>
     </div>
-
-    <!-- The content div now sits on top of the gradients -->
     <div class="flex flex-col justify-center text-center absolute inset-0 m-auto text-white z-10" id="main-content">
         <span class="text-6xl md:text-12xl translate-y-5">˙◠˙</span>
-        <span class="text-xl md:text-3xl pt-1" id="text">Aw snap! The service you are trying to access does not exist or broke!</span>
+        <span class="text-xl md:text-3xl pt-1" id="text">Aww snap! The service you are trying to access does not exist or broke!</span>
         <span class="text-blue-100 hover:text-amber-200 transition-all duration-300">
             <a href="mailto:ero@yhw.tw">ero@yhw.tw</a>
         </span>
@@ -50,7 +49,7 @@ import "./styles.css"
         gradientLayers[colorIndex].classList.add("opacity-100");
     }
     setInterval(applyNextColor, 5000)
-    const title = document.createElement('title');
-    title.innerText = "Oops!";
+	const title = document.querySelector('title');
+  title.innerText = "Hi"
   </script>
 </html>
