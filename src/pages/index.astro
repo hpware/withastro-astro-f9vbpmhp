@@ -1,3 +1,6 @@
+---
+import "./styles.css"
+---
 <!doctype html>
 <html>
 <head>
@@ -12,10 +15,10 @@
 <body>
       <div class="hidden opacity-100"></div> <!--Filler-->
     <div id="gradient" class="absolute inset-0">
-        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-700 bg-gradient-to-bl from-blue-600 to-teal-800"></div>
-        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-1000 bg-gradient-to-bl from-green-700 to-teal-800"></div>
-        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-1000 bg-gradient-to-bl from-green-700 to-amber-800"></div>
-        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-1000 bg-gradient-to-bl from-blue-600 to-amber-800"></div>
+        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-blue-600 to-teal-800"></div>
+        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-green-700 to-teal-800"></div>
+        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-green-700 to-amber-800"></div>
+        <div class="gradient-layer absolute inset-0 opacity-0 transition-opacity duration-[3s] bg-gradient-to-bl from-blue-600 to-amber-800"></div>
     </div>
 
     <!-- The content div now sits on top of the gradients -->
@@ -46,7 +49,7 @@
     if (gradientLayers.length > 0) {
         gradientLayers[colorIndex].classList.add("opacity-100");
     }
-    setInterval(applyNextColor, 3000)
+    setInterval(applyNextColor, 5000)
     const title = document.createElement('title');
     title.innerText = "Oops!";
   </script>
