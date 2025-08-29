@@ -1,19 +1,19 @@
 ---
 import "./styles.css"
+const version = "v2.0.0"
 ---
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="YHW Server Managing team."/>
   <meta name="author-email" content="labs.team@yuanhau.com" />
 	<meta name="generator" content={Astro.generator} />
-  <title>Aww snap!</title>
+  <title>Error Page {version} | yhwLabs</title>
+  <meta name="description content="Aww snap! You are somewhere deep in the unknown hole!" />
   <script defer src="https://data.yuanhau.com/script.js" data-website-id="236923e1-a176-4d79-9ee8-a2c91277aeb1"></script>
 </head>
-  <style>
-</style>
 <body>
       <div class="hidden opacity-100"></div> <!--Filler-->
     <div id="gradient" class="absolute inset-0">
@@ -28,7 +28,7 @@ import "./styles.css"
         <span class="text-blue-100 hover:text-amber-200 transition-all duration-300">
             <a href="mailto:ero@yhw.tw">ero@yhw.tw</a>
         </span>
-        <noscript>Please turn on JS.</noscript>
+        <noscript>Please turn on javascript.</noscript>
     </div>
 </body>
   <script>
@@ -51,6 +51,5 @@ import "./styles.css"
     }
     setInterval(applyNextColor, 5000)
 	const title = document.querySelector('title');
-  title.innerText = "Aww snap! You are somewhere deep in the unknown hole!"
   </script>
 </html>
